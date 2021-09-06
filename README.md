@@ -5,7 +5,7 @@
 2. Free ports in machine [1212, 4000]
 
 ## Project Source
-  git clone my_url
+  git clone https://github.com/agiratech-gubendiran/ameex_task.git
 
 ## configuration
 	update application configuration from .env file

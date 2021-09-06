@@ -1,0 +1,141 @@
+{
+	"/user-management/user": {
+		"get": {
+			"tags": [
+				"user-management"
+			],
+			"security": [
+				{
+					"authentication": []
+				}
+			],
+			"summary": "Get the list of user",
+			"description": "Get the list of user",
+			"parameters": [],
+			"responses": {
+				"200": {
+					"description": "Success"
+				},
+				"400": {
+					"description": "Bad Request"
+				},
+				"401": {
+					"description": "Un-Authorized"
+				},
+				"403": {
+					"description": "Forbidden"
+				},
+				"404": {
+					"description": "Not Found"
+				},
+				"500": {
+					"description": "Internal server error"
+				},
+				"502": {
+					"description": "Bad Gateway"
+				},
+				"504": {
+					"description": "Gateway Timeout"
+				}
+			}
+		}
+	},
+	"/user-management/auth": {
+		"post": {
+			"tags": [
+				"user-management"
+			],
+			"security": [
+				{
+					"authentication": []
+				}
+			],
+			"summary": "authedicate the user",
+			"description": "authedicate the user",
+			"parameters": [
+				{
+					"in": "body",
+					"name": "Body Params",
+					"schema": {
+						"required": true,
+						"type": "object",
+						"properties": {
+							"username": {
+								"required": true,
+								"type": "string",
+								"maxLength": 50
+							}
+						}
+					}
+				}
+			],
+			"responses": {
+				"200": {
+					"description": "Success"
+				},
+				"400": {
+					"description": "Bad Request"
+				},
+				"401": {
+					"description": "Un-Authorized"
+				},
+				"403": {
+					"description": "Forbidden"
+				},
+				"404": {
+					"description": "Not Found"
+				},
+				"500": {
+					"description": "Internal server error"
+				},
+				"502": {
+					"description": "Bad Gateway"
+				},
+				"504": {
+					"description": "Gateway Timeout"
+				}
+			}
+		}
+	},
+	"/user-management/postData": {
+		"get": {
+			"tags": [
+				"user-management"
+			],
+			"security": [
+				{
+					"authentication": []
+				}
+			],
+			"summary": "userPostDataHandler",
+			"description": "userPostDataHandler",
+			"parameters": [],
+			"responses": {
+				"200": {
+					"description": "Success"
+				},
+				"400": {
+					"description": "Bad Request"
+				},
+				"401": {
+					"description": "Un-Authorized"
+				},
+				"403": {
+					"description": "Forbidden"
+				},
+				"404": {
+					"description": "Not Found"
+				},
+				"500": {
+					"description": "Internal server error"
+				},
+				"502": {
+					"description": "Bad Gateway"
+				},
+				"504": {
+					"description": "Gateway Timeout"
+				}
+			}
+		}
+	}
+}
